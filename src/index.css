@@ -1,6 +1,25 @@
-body{
+@import url(./static/reset.css);
+@import url(./static/typography.css);
+
+body {
   font-family: Helvetica;
   font-size: 16px;
   line-height: 100%;
   font-weight: 400;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 100px;
+
 }
