@@ -3,7 +3,11 @@
   font-weight: 400;
   line-height: 100%;
 }
-
+.paragraph24_semibold{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+}
 .title36_bold {
   font-size: 36px;
   font-weight: 700;

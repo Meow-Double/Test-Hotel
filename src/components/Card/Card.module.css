@@ -17,9 +17,13 @@
   filter: brightness(60%);
 }
 .content {
+  display: flex;
+  align-items: start;
+  gap: 40px;
   position: relative;
   z-index: 2;
 }
+
 .title {
   margin-bottom: 6px;
   line-height: 100%;
@@ -32,4 +36,14 @@
 
 .price {
   margin-bottom: 24px;
+}
+.star{
+  width: 32px;
+  height: 32px;
+}
+.stars{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
 }

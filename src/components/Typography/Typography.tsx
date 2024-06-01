@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import { ReactNode } from 'react';
 
-type TypographyVariant = 'paragraph16_regular' | 'title36_bold';
+type TypographyVariant = 'paragraph16_regular' | 'paragraph24_semibold' | 'title36_bold';
 type TypographyTag = 'h1' | 'h2' | 'h3' | 'h4' | 'div' | 'p';
 
 type TypographyProps<Tag extends TypographyTag> = React.ComponentProps<Tag> & {
