@@ -5,7 +5,18 @@
       "title": "Hotel - Grand",
       "country": "Canada",
       "city": "Quebec",
-      "rating": 5
+      "rating": 5,
+      "time": 24,
+      "price": 140
+    },
+    {
+      "id": 1,
+      "title": "More finest ",
+      "country": "UK",
+      "city": "London",
+      "rating": 4,
+      "time": 72,
+      "price": 320
     }
   ]
 }

@@ -9,6 +9,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "server": "npx json-server ./src/db.json",
+    "stylelint": "stylelint \"**/*.css\"",
+    "pretty": "yarn format && yarn lint --fix && yarn stylelint --fix",
     "prepare": "husky"
   },
   "lint-staged": {

@@ -17,6 +17,8 @@ type Item = {
   country: string;
   city: string;
   rating: number;
+  time: number;
+  price: number;
 };
 
 type ItemResponse = Item[];

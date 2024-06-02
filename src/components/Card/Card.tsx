@@ -4,7 +4,7 @@ import styles from './Card.module.css';
 import BackgroundImage from '@/assets/city.jpg';
 import StarImage from '@/assets/star.svg';
 
-export const Card = ({title, country, city, rating}: Item) => {
+export const Card = ({title, country, city, rating, price, time}: Item) => {
 
   const renderStar = (): JSX.Element[] => {
       return [...new Array(Number(rating))].map((_, index) =>
@@ -24,7 +24,7 @@ export const Card = ({title, country, city, rating}: Item) => {
             {country} - {city}
           </Typography>
           <Typography variant='paragraph16_regular' tag='p' className={styles.price}>
-            140$ / 24 hour
+            {price}$ / {time} hour
           </Typography>
 
           <Button variant='primary'>Go to checkout</Button>

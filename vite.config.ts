@@ -3,22 +3,22 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command }) => {
+export default defineConfig(() => {
   const config = {
     server: {
       port: 5173,
-      open: true,
+      open: true
     },
     plugins: [react()],
     resolve: {
       alias: {
         src: '/src',
         components: '/src/components',
-        '@': resolve(__dirname, 'src'),
-      },
+        '@': resolve(__dirname, 'src')
+      }
     },
-    base: '/',
+    base: '/'
   };
- 
+
   return config;
 });
