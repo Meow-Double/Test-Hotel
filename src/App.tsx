@@ -22,6 +22,8 @@ export const App = () => {
           <div className='items'>{data?.data.map((item) => <Card key={item.id} {...item} />)}</div>
         </ItemsProvider>
       </div>
+
+  
     </div>
   );
 };
