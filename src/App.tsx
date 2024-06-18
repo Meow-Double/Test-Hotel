@@ -1,23 +1,20 @@
 import { useContext } from 'react';
-import { Card, Filters, Typography } from './components';
-import { ItemsProvider } from './context/ItemProvider';
-import { SortContext, SortContextProvider } from './context/Sort/SortContext';
+
+import { SortContext } from './context/Sort/SortContext';
 import { useGetItems } from './utils/api';
+import { Card, Filters, Typography } from './components';
 
+const path = ['price', '-title', 'rating'];
 export const App = () => {
-
-  const drop = useContext(SortContext)
-
+  const { activeItem } = useContext(SortContext);
 
   const { data } = useGetItems({
     config: {
       params: {
-        _sort: drop ? drop : "price"
+        _sort: activeItem ? path[Number(activeItem)] : 'price'
       }
     }
   });
-
-
 
   return (
     <div className='container'>
@@ -25,14 +22,8 @@ export const App = () => {
         Test task on hotels
       </Typography>
       <div className='inner'>
-        <SortContextProvider >
-          <ItemsProvider items={data?.data}>
-            <Filters />
-            <div className='items'>
-              {data?.data.map((item) => <Card key={item.id} {...item} />)}
-            </div>
-          </ItemsProvider>
-        </SortContextProvider>
+        <Filters />
+        <div className='items'>{data?.data.map((item) => <Card key={item.id} {...item} />)}</div>
       </div>
     </div>
   );

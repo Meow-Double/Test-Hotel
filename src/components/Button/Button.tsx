@@ -1,5 +1,7 @@
+import type { ComponentProps, ReactNode } from 'react';
+import { forwardRef } from 'react';
 import clsx from 'clsx';
-import { ComponentProps, ReactNode, forwardRef } from 'react';
+
 import styles from './Button.module.css';
 
 type ButtonVariant = 'primary';

@@ -1,16 +1,17 @@
-import { Button } from '../Button/Button';
-import { Typography } from '../Typography/Typography';
-import styles from './Card.module.css';
 import BackgroundImage from '@/assets/city.jpg';
 import StarImage from '@/assets/star.svg';
 
-export const Card = ({title, country, city, rating, price, time}: Item) => {
+import { Button } from '../Button/Button';
+import { Typography } from '../Typography/Typography';
 
+import styles from './Card.module.css';
+
+export const Card = ({ title, country, city, rating, price, time }: Item) => {
   const renderStar = (): JSX.Element[] => {
-      return [...new Array(Number(rating))].map((_, index) =>
-        <img key={index} className={styles.star} src={StarImage} alt="star"/>
-      )
-      }
+    return [...new Array(Number(rating))].map((_, index) => (
+      <img key={index} className={styles.star} src={StarImage} alt='star' />
+    ));
+  };
 
   return (
     <div className={styles.card}>
@@ -30,10 +31,10 @@ export const Card = ({title, country, city, rating, price, time}: Item) => {
           <Button variant='primary'>Go to checkout</Button>
         </div>
         <div>
-          <div className={styles.stars}>
-            {renderStar()}
-          </div>
-          <Typography variant='paragraph24_semibold' tag='p'>{rating} / 5</Typography>
+          <div className={styles.stars}>{renderStar()}</div>
+          <Typography variant='paragraph24_semibold' tag='p'>
+            {rating} / 5
+          </Typography>
         </div>
       </div>
     </div>

@@ -1,11 +1,11 @@
 {
   "items": [
     {
-      "id": 1,
+      "id": 0,
       "title": "Hotel - Grand",
       "country": "Canada",
       "city": "Quebec",
-      "rating": 5,
+      "rating": 4,
       "time": 24,
       "price": 140
     },
@@ -14,7 +14,7 @@
       "title": "More finest ",
       "country": "UK",
       "city": "London",
-      "rating": 4,
+      "rating": 5,
       "time": 72,
       "price": 320
     }

@@ -1,6 +1,8 @@
-import { ReactNode } from 'react';
-import styles from './Checkbox.module.css';
+import type { ReactNode } from 'react';
+
 import { Typography } from '../Typography/Typography';
+
+import styles from './Checkbox.module.css';
 
 interface CheckboxProps {
   children: ReactNode;

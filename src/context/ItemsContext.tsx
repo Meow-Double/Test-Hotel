@@ -5,5 +5,5 @@ export interface ItemsContextProps {
 }
 
 export const ItemsContext = createContext<ItemsContextProps>({
-  items: [],
+  items: []
 });
